@@ -2,19 +2,18 @@
 
 <img src="https://raw.githubusercontent.com/Devopstrio/.github/main/assets/Browser_logo.png" height="150" alt="Monitoring Cost Frugal Logo" />
 
-<h1>Monitoring Cost Frugal Platform</h1>
+<h1>Monitoring Cost Frugal</h1>
 
-<p><strong>The Institutional-Grade Platform for Cost-Optimized Observability, Data Frugality, and SRE FinOps Orchestration</strong></p>
+<p><strong>The Institutional-Grade Platform for Cost-Optimized Observability, Data Frugality, and SRE FinOps Orchestration.</strong></p>
 
-[![Standard: Observability--FinOps](https://img.shields.io/badge/Standard-Observability--FinOps-amber.svg?style=for-the-badge&labelColor=000000)]()
-[![Status: Production--Ready](https://img.shields.io/badge/Status-Production--Ready-amber.svg?style=for-the-badge&labelColor=000000)]()
-[![Ops: Frugal--Monitoring](https://img.shields.io/badge/Ops-Frugal--Monitoring-blue.svg?style=for-the-badge&labelColor=000000)]()
-[![Strategy: Cardinality--Reduction](https://img.shields.io/badge/Strategy-Cardinality--Reduction-gold.svg?style=for-the-badge&labelColor=000000)]()
+[![Standard: Observability-FinOps-Excellence](https://img.shields.io/badge/Standard-Observability--FinOps--Excellence-amber.svg?style=for-the-badge&labelColor=000000)]()
+[![Status: Production--Ready](https://img.shields.io/badge/Status-Production--Ready-emerald.svg?style=for-the-badge&labelColor=000000)]()
+[![Focus: Data--Frugality](https://img.shields.io/badge/Focus-Data--Frugality-indigo.svg?style=for-the-badge&labelColor=000000)]()
 
 <br/>
 
 > **"Observability is data; Frugality is intelligence."** 
-> Monitoring Cost Frugal Platform is a flagship solution for SREs, DevOps Architects, and FinOps leaders. By orchestrating automated cardinality reduction, tiered storage retention, and sampling-aware ingestion pipelines, it enables organizations to achieve full-stack observability with institutional-scale cost efficiency.
+> **Monitoring Cost Frugal** is an enterprise-grade platform designed to provide a secure, measurable, and highly automated foundation for global telemetry economics. It orchestrates the complex lifecycle of observability data—from high-throughput log sampling and cardinality reduction to multi-tier storage lifecycle management and unified SRE FinOps governance.
 
 </div>
 
@@ -22,612 +21,262 @@
 
 ## 🏛️ Executive Summary
 
-The **Monitoring Cost Frugal Platform** is a specialized flagship solution designed for Global SRE Organizations, Platform Teams, and FinOps Business Units. As organizations scale their microservices and infrastructure, the cost of observability (metrics, logs, traces) often scales linearly (or exponentially), leading to massive "Monitoring Bills." This platform addresses these complexities using a cloud-native, "frugal-first" framework.
+Exploding telemetry volumes and invisible monitoring expenses are strategic operational liabilities; lack of centralized telemetry frugality is a primary barrier to organizational SRE efficiency. Organizations fail to maintain a lean observability budget not because of a lack of dashboards, but because of fragmented data standards, lack of automated sampling, and an inability to orchestrate telemetry economics with operational precision.
 
-This platform provides a **Unified Observability Economics Plane**. It demonstrates how to orchestrate institutional monitoring—using **Prometheus**, **Loki**, **OpenTelemetry**, and **Terraform**—to create a "Cost-Aware" observability culture. By providing **Cardinality Reduction**, **Sampling Orchestration**, **Tiered Storage**, and **Budget-Aware Alerting**, it enables organizations to move from "Blind Ingestion" to "Strategic Observability Capabilities."
-
----
-
-## 📉 The "Observability Tax" Problem
-
-Enterprises scaling observability face existential challenges:
-- **Cardinality Explosion**: Metrics with high-cardinality labels (e.g. user_id, pod_name) that exponentially increase Prometheus storage and memory requirements.
-- **Log Ingestion Fatigue**: Ingesting massive volumes of "DEBUG" or "INFO" logs that are rarely queried, leading to high Loki/Elasticsearch costs.
-- **Trace Bloat**: Collecting 100% of traces for healthy requests, resulting in excessive storage costs for data with low forensic value.
-- **Storage Tiering Gap**: Keeping all monitoring data in expensive "Hot" storage (SSD) for 90+ days when 95% of queries target data less than 24 hours old.
+This platform provides the **Observability Economics Plane**. It implements a complete **Enterprise Frugality-as-Code Framework**, enabling SRE and Finance teams to manage telemetry spend as a first-class citizen. By automating the reduction of high-cardinality metrics and orchestrating real-time log sampling, we ensure that every organizational signal—from edge network logs to backend trace spans—is cost-optimized by default, audited for history, and strictly aligned with institutional FinOps frameworks.
 
 ---
 
-## 🚀 Strategic Drivers & Business Outcomes
+## 📐 Architecture Storytelling: Principal Reference Models
 
-### 🎯 Strategic Drivers
-- **Standardized Data Frugality**: Establishing repeatable patterns for Sampling, Filtering, and Downsampling across all data types.
-- **Tiered Storage Architecture**: Implementing Hot/Warm/Cold lifecycles (Local Disk → Object Storage → Archive) to optimize unit costs.
-- **Cardinality Governance**: Using automated scanners to identify and redact high-cardinality labels that provide low observability value.
+### 1. Principal Architecture: Global Monitoring Cost & Telemetry Frugality Intelligence Plane
+This diagram illustrates the end-to-end flow from high-volume telemetry capture and sampling to cardinality reduction, multi-tier storage, and institutional forensic auditing.
 
-### 💰 Business Outcomes
-- **40-60% Reduction in Observability Spend**: Through aggressive sampling, cardinality reduction, and retention optimization.
-- **Increased Query Performance**: By reducing the volume of unnecessary data, improving the speed of dashboards and alerts.
-- **Institutional FinOps Alignment**: Ensuring every monitoring dollar spent is tied to an SLO or business outcome through budget-aware policies.
+```mermaid
+graph LR
+    %% Subgraph Definitions
+    subgraph TelemetryIngress["Telemetry & Signal Ingress"]
+        direction TB
+        Logs["High-Volume Logs (Loki)"]
+        Metrics["High-Cardinality Metrics (Prom)"]
+        Traces["Distributed Traces (Tempo)"]
+    end
+
+    subgraph IntelligenceEngine["Frugality Intelligence Hub"]
+        direction TB
+        API["FastAPI Frugality Gateway"]
+        Sampler["Smart Sampling Engine"]
+        Reducer["Cardinality Reducer"]
+        TieringOrch["Storage Tiering Orchestrator"]
+    end
+
+    subgraph StorageMesh["Multi-Tier Storage Mesh"]
+        direction TB
+        HotStorage["Hot Tier (SSD/NVMe)"]
+        WarmStorage["Warm Tier (Object S3)"]
+        ColdStorage["Cold Tier (Archive/Glacier)"]
+    end
+
+    subgraph OperationsHub["Institutional Frugality Hub"]
+        direction TB
+        Scorecard["Frugality Maturity Score"]
+        Analytics["Signal-to-Noise & ROI Stats"]
+        Audit["Forensic Telemetry Metadata Lake"]
+    end
+
+    subgraph DevOps["Frugality-as-Code Orchestration"]
+        direction TB
+        TF["Terraform Frugality Modules"]
+        Policy["Telemetry Retention Policy"]
+        ChatOps["Sampling Approval Hub"]
+    end
+
+    %% Flow Arrows
+    TelemetryIngress -->|1. Capture Signal| API
+    API -->|2. Apply Sampling| Sampler
+    Sampler -->|3. Reduce Cardinality| Reducer
+    Reducer -->|4. Orchestrate Tiering| TieringOrch
+    
+    TieringOrch -->|5. Store Data| StorageMesh
+    StorageMesh -->|6. Notify Status| ChatOps
+    API -->|7. Visualize Health| Scorecard
+    
+    Scorecard -->|8. Track Spend| Analytics
+    Scorecard -->|9. Record Event| Audit
+    
+    TF -->|10. Provision Hub| IntelligenceEngine
+    Policy -->|11. Enforce Retention| TieringOrch
+    Audit -->|12. Improve Models| Sampler
+
+    %% Styling
+    classDef ingress fill:#f5f5f5,stroke:#616161,stroke-width:2px;
+    classDef intel fill:#fff8e1,stroke:#ff8f00,stroke-width:2px;
+    classDef storage fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef ops fill:#ede7f6,stroke:#311b92,stroke-width:2px;
+    classDef devops fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
+
+    class TelemetryIngress ingress;
+    class IntelligenceEngine intel;
+    class StorageMesh storage;
+    class OperationsHub ops;
+    class DevOps devops;
+```
+
+### 2. The Telemetry Lifecycle Flow
+The continuous path of a telemetry signal from initial capture and sampling to active filtering, tiered storage, and institutional forensic auditing.
+
+```mermaid
+graph LR
+    Capture["Capture Signal"] --> Sample["Sample & Filter"]
+    Sample --> Store["Tiered Storage"]
+    Store --> Purge["Automated Purge"]
+    Purge --> Audit["Forensic Audit"]
+```
+
+### 3. High-Throughput Log Sampling & Dropping Flow
+Strategically eliminating verbose noise (e.g., DEBUG/INFO logs for healthy services) at the ingestion edge, ensuring only high-value forensic signals reach expensive hot storage.
+
+```mermaid
+graph LR
+    Logs["Raw Log Stream"] --> Filter["Edge Frugality Filter"]
+    Filter -->|Error/Warn| Keep["Keep 100%"]
+    Filter -->|Debug/Info| Sample["Sample 1%"]
+    Keep --- Store["Hot Storage Tier"]
+```
+
+### 4. Metric Cardinality Optimization Flow
+Identifying and pruning unused or high-cardinality label sets (e.g., unique user IDs in Prometheus metrics) that exponentially drive up storage and query costs.
+
+```mermaid
+graph LR
+    Metrics["Raw Metrics"] --> Analyzer["Cardinality Analyzer"]
+    Analyzer -->|High-Card| Redact["Label Redaction"]
+    Analyzer -->|Low-Card| Pass["Direct Pass"]
+    Redact --- UI["Optimization Report"]
+```
+
+### 5. Multi-Tier Storage Architecture (Hot/Warm/Cold)
+Tiering observability data based on access frequency, moving historical data from expensive SSDs to low-cost object storage and long-term archives.
+
+```mermaid
+graph TD
+    Hot["Hot (0-7 Days)"] -->|Rotate| Warm["Warm (8-30 Days)"]
+    Warm -->|Archive| Cold["Cold (31+ Days)"]
+    Cold -->|Purge| Recycle["Deleted"]
+```
+
+### 6. Trace Tail-Based Sampling Strategy
+Retaining 100% of error traces and high-latency spans while sampling only a small fraction of successful requests, maximizing forensic value per byte stored.
+
+```mermaid
+graph LR
+    Spans["Distributed Spans"] --> Sampler["Tail-Based Sampler"]
+    Sampler -->|Error Detected| Keep["Store Full Trace"]
+    Sampler -->|Success| Dropper["Store 0.1%"]
+    Keep --- SRE["Forensic Investigation"]
+```
+
+### 7. Institutional Telemetry Cost Scorecard
+Grading organizational performance based on key indicators: Signal-to-Noise Ratio, Storage Efficiency, and Observability Spend-to-Revenue.
+
+```mermaid
+graph TD
+    Post["Frugality Health: 94%"] --> Risk["Waste Debt: 6%"]
+    Post --- C1["Signal Ratio (99%)"]
+    Post --- C2["Storage ROI (92%)"]
+```
+
+### 8. Identity & RBAC for Monitoring Governance
+Managing fine-grained access to sampling rates, retention policies, and cost dashboards between SREs, FinOps Analysts, and Developers.
+
+```mermaid
+graph TD
+    SRE["SRE Lead"] --> Hub["Manage Hub Engine"]
+    Analyst["FinOps Analyst"] --> Stats["View Spend Stats"]
+    Dev["Developer"] --> View["Observe App Health"]
+```
+
+### 9. IaC Deployment: Frugality-as-Code Framework
+Using modular Terraform to deploy and manage the versioned distribution of the frugality hubs, sampling workers, and forensic metadata lakes.
+
+```mermaid
+graph LR
+    HCL["Infrastructure Code"] --> TF["Terraform Apply"]
+    TF --> Engine["Frugality Control Plane"]
+    Engine --> Workers["Distributed Samplers"]
+```
+
+### 10. AIOps Signal Quality Validation Flow
+Using advanced analytics to identify "Zombie Metrics" (metrics being sent but never queried) and unread dashboards, triggering automated cleanup recommendations.
+
+```mermaid
+graph LR
+    Metrics["Ingested Metrics"] --> Usage["Query Usage Logs"]
+    Usage --> Match["Usage Comparator"]
+    Match -->|Unused| Cleanup["Cleanup Recommendation"]
+```
+
+### 11. Metadata Lake for Forensic Telemetry Audit
+Storing long-term records of every signal dropped, every sampling decision, and every dollar saved for institutional record-keeping and compliance auditing.
+
+```mermaid
+graph LR
+    Event["Sampling Event"] --> Stream["Forensic Stream"]
+    Stream --> Lake["Frugality Metadata Lake"]
+    Lake --> Trends["Spend & Efficiency Trends"]
+```
 
 ---
 
-## 📐 Architecture Storytelling: 80+ Advanced Diagrams
-
-### 1. Executive Frugal Observability Pipeline
-*The industrial flow from data source to tiered storage.*
-```mermaid
-graph TD
-    subgraph "Data Sources"
-        App[Applications]
-        Infra[Infrastructure]
-        K8s[Kubernetes]
-    end
-
-    subgraph "Frugal Ingestion"
-        Sampler[Sampling Engine]
-        Filter[Filter Pipeline]
-        Reducer[Cardinality Reducer]
-    end
-
-    subgraph "Tiered Storage"
-        Hot[Hot: Prometheus/Loki]
-        Warm[Warm: Object Store]
-        Cold[Cold: Archive/Glacier]
-    end
-
-    subgraph "Optimization"
-        FinOps[FinOps Analyzer]
-        Alert[Budget Alerts]
-    end
-
-    App --> Sampler
-    Infra --> Filter
-    K8s --> Reducer
-    Sampler --> Hot
-    Filter --> Hot
-    Reducer --> Hot
-    Hot --> Warm
-    Warm --> Cold
-    FinOps --> Alert
-```
-
-### 2. Metrics Cardinality Reduction Logic
-*How the platform identifies and redacts expensive labels.*
-```mermaid
-graph LR
-    Prom[Prometheus Stats] --> Scanner[Cardinality Scanner]
-    Scanner -->|Label: user_id| High{Cardinality > 10k?}
-    High -->|Yes| Redact[Action: Aggregate / Drop]
-    High -->|No| Keep[Action: Preserve]
-    Redact --> Report[FinOps Impact Report]
-```
-
-### 3. Log Sampling Strategy (Frugal Loki)
-```mermaid
-graph TD
-    Log[Incoming Log Stream] --> Level{Log Level?}
-    Level -->|ERROR| Keep100[Store 100%]
-    Level -->|WARN| Sample50[Store 50%]
-    Level -->|INFO| Sample10[Store 10%]
-    Level -->|DEBUG| Sample1[Store 1%]
-```
-
-### 4. Tiered Retention Lifecycle
-```mermaid
-stateDiagram-v2
-    [*] --> Hot: Days 0-7 (SSD)
-    Hot --> Warm: Days 8-30 (Object Store)
-    Warm --> Cold: Days 31-365 (Archive)
-    Cold --> [*]: Purge
-```
-
-### 5. Trace Sampling Flow (Tail Sampling)
-```mermaid
-graph LR
-    Trace[Full Trace] --> Collector[OTEL Collector]
-    Collector -->|Status: 5xx| Store100[Keep 100%]
-    Collector -->|Latency: >2s| Store100
-    Collector -->|Status: 200| Sample1[Keep 1%]
-```
-
-### 6. Downsampling Pipeline Logic
-```mermaid
-graph LR
-    Raw[Raw Metrics: 15s] --> Agg[Aggregator]
-    Agg --> Step1[1m Resolution]
-    Step1 --> Step2[5m Resolution]
-    Step2 --> Step3[1h Resolution]
-```
-
-### 7. Cost-Aware Alerting Thresholds
-```mermaid
-graph TD
-    Metric[Metric Stream] --> Alert[Alert Manager]
-    Alert --> Cost[Check Ingestion Cost]
-    Cost -->|Threshold Met| Notify[Mute Noisy Alerts]
-```
-
-### 8. FinOps: Observability Spend Model
-```mermaid
-graph LR
-    Usage[Usage Stats] --> Unit[Unit Cost Engine]
-    Unit --> Charge[Departmental Chargeback]
-    Charge --> Budget[Budget Enforcement]
-```
-
-### 9. Multi-Tenant Resource Isolation
-```mermaid
-graph TD
-    TenantA[Team A] --> QuotaA[Quota: 500 GB]
-    TenantB[Team B] --> QuotaB[Quota: 100 GB]
-```
-
-### 10. Executive Observability Dashboard
-```mermaid
-graph LR
-    API[Backend API] --> React[Vite / React Hub]
-    React --> Recharts[Visual Analytics]
-    Recharts --> Executive[SRE/FinOps Insights]
-```
-
-### 11. Observability lifecycle
-```mermaid
-graph LR
-    O[Obse] --> L[Life]
-```
-
-### 12. Metrics flow logic
-```mermaid
-graph LR
-    M[Metr] --> F[Flow]
-```
-
-### 13. Log ingestion flow
-```mermaid
-graph LR
-    L[Logs] --> I[Inge]
-```
-
-### 14. Trace processing flow
-```mermaid
-graph LR
-    T[Trac] --> P[Proc]
-```
-
-### 15. Ingestion sampling logic
-```mermaid
-graph LR
-    I[Inge] --> S[Samp]
-```
-
-### 16. Retention policy flow
-```mermaid
-graph LR
-    R[Rete] --> P[Poli]
-```
-
-### 17. Storage tiering logic
-```mermaid
-graph LR
-    S[Stor] --> T[Tier]
-```
-
-### 18. Cardinality control flow
-```mermaid
-graph LR
-    C[Card] --> C[Cont]
-```
-
-### 19. Budget enforcement flow
-```mermaid
-graph LR
-    B[Budg] --> E[Enfo]
-```
-
-### 20. Downsampling pipeline
-```mermaid
-graph LR
-    D[Down] --> P[Pipe]
-```
-
-### 21. Compression strategy
-```mermaid
-graph LR
-    C[Comp] --> S[Stra]
-```
-
-### 22. SLO-based alerting
-```mermaid
-graph LR
-    S[SLO] --> A[Aler]
-```
-
-### 23. Noise reduction flow
-```mermaid
-graph LR
-    N[Nois] --> R[Redu]
-```
-
-### 24. FinOps integration
-```mermaid
-graph LR
-    F[FinO] --> I[Inte]
-```
-
-### 25. Multi-tenant isolation
-```mermaid
-graph LR
-    M[Mult] --> I[Isol]
-```
-
-### 26. Query optimization flow
-```mermaid
-graph LR
-    Q[Quer] --> O[Opti]
-```
-
-### 27. Dashboard summary flow
-```mermaid
-graph LR
-    D[Dash] --> S[Summ]
-```
-
-### 28. Infrastructure: K8s
-```mermaid
-graph LR
-    I[Infr] --> K[Kube]
-```
-
-### 29. Infrastructure: Prometheus
-```mermaid
-graph LR
-    I[Infr] --> P[Prom]
-```
-
-### 30. Infrastructure: Loki
-```mermaid
-graph LR
-    I[Infr] --> L[Loki]
-```
-
-### 31. Infrastructure: Grafana
-```mermaid
-graph LR
-    I[Infr] --> G[Graf]
-```
-
-### 32. Monitoring: Alerts
-```mermaid
-graph LR
-    M[Moni] --> A[Aler]
-```
-
-### 33. Monitoring: Metrics
-```mermaid
-graph LR
-    M[Moni] --> M[Metr]
-```
-
-### 34. Monitoring: Cost
-```mermaid
-graph LR
-    M[Moni] --> C[Cost]
-```
-
-### 35. CI/CD: Build pipeline
-```mermaid
-graph LR
-    C[CICD] --> B[Buil]
-```
-
-### 36. CI/CD: Test pipeline
-```mermaid
-graph LR
-    C[CICD] --> T[Test]
-```
-
-### 37. CI/CD: Deploy pipeline
-```mermaid
-graph LR
-    C[CICD] --> D[Depl]
-```
-
-### 38. Frontend: Overview
-```mermaid
-graph LR
-    F[Fron] --> O[Over]
-```
-
-### 39. Frontend: Cost
-```mermaid
-graph LR
-    F[Fron] --> C[Cost]
-```
-
-### 40. Frontend: Optimization
-```mermaid
-graph LR
-    F[Fron] --> O[Opti]
-```
-
-### 41. API: Auth flow
-```mermaid
-graph LR
-    A[API] --> A[Auth]
-```
-
-### 42. API: Cost metrics
-```mermaid
-graph LR
-    A[API] --> C[Cost]
-```
-
-### 43. API: Recommendations
-```mermaid
-graph LR
-    A[API] --> R[Reco]
-```
-
-### 44. API: Dashboard data
-```mermaid
-graph LR
-    A[API] --> D[Dash]
-```
-
-### 45. Worker: Ingestion
-```mermaid
-graph LR
-    W[Work] --> I[Inge]
-```
-
-### 46. Worker: Optimization
-```mermaid
-graph LR
-    W[Work] --> O[Opti]
-```
-
-### 47. Worker: Notification
-```mermaid
-graph LR
-    W[Work] --> N[Noti]
-```
-
-### 48. Pipeline: Metrics reduction
-```mermaid
-graph LR
-    P[Pipe] --> M[Metr]
-```
-
-### 49. Pipeline: Log sampling
-```mermaid
-graph LR
-    P[Pipe] --> L[Logs]
-```
-
-### 50. Pipeline: Trace filtering
-```mermaid
-graph LR
-    P[Pipe] --> T[Trac]
-```
-
-### 51. Storage: Tiered logic
-```mermaid
-graph LR
-    S[Stor] --> T[Tier]
-```
-
-### 52. Storage: Retention automation
-```mermaid
-graph LR
-    S[Stor] --> R[Rete]
-```
-
-### 53. Storage: Purge logic
-```mermaid
-graph LR
-    S[Stor] --> P[Purg]
-```
-
-### 54. Alerting: Cost spikes
-```mermaid
-graph LR
-    A[Aler] --> C[Cost]
-```
-
-### 55. Alerting: Cardinality warnings
-```mermaid
-graph LR
-    A[Aler] --> C[Card]
-```
-
-### 56. Alerting: Budget alerts
-```mermaid
-graph LR
-    A[Aler] --> B[Budg]
-```
-
-### 57. FinOps: Spend analysis
-```mermaid
-graph LR
-    F[FinO] --> S[Spen]
-```
-
-### 58. FinOps: Chargeback model
-```mermaid
-graph LR
-    F[FinO] --> C[Char]
-```
-
-### 59. FinOps: Savings report
-```mermaid
-graph LR
-    F[FinO] --> S[Savi]
-```
-
-### 60. Integration: Kubernetes
-```mermaid
-graph LR
-    I[Inte] --> K[Kube]
-```
-
-### 61. Integration: Cloud providers
-```mermaid
-graph LR
-    I[Inte] --> C[Clou]
-```
-
-### 62. Integration: Apps
-```mermaid
-graph LR
-    I[Inte] --> A[Apps]
-```
-
-### 63. SLO: Tracking logic
-```mermaid
-graph LR
-    S[SLO] --> T[Trac]
-```
-
-### 64. SLO: Compliance report
-```mermaid
-graph LR
-    S[SLO] --> C[Comp]
-```
-
-### 65. SLA: Uptime tracking
-```mermaid
-graph LR
-    S[SLA] --> U[Upti]
-```
-
-### 66. Optimization roadmap
-```mermaid
-graph LR
-    O[Opti] --> R[Road]
-```
-
-### 67. Value realization
-```mermaid
-graph LR
-    V[Valu] --> R[Real]
-```
-
-### 68. Institutional maturity
-```mermaid
-graph LR
-    I[Inst] --> M[Matu]
-```
-
-### 69. Strategy execution
-```mermaid
-graph LR
-    S[Stra] --> E[Exec]
-```
-
-### 70. Ecosystem map
-```mermaid
-graph LR
-    E[Ecos] --> M[Map]
-```
-
-### 71. Supply chain of data
-```mermaid
-graph LR
-    S[Supp] --> D[Data]
-```
-
-### 72. Frugal blueprint map
-```mermaid
-graph LR
-    F[Frug] --> B[Blue]
-```
-
-### 73. Data lifecycle logic
-```mermaid
-graph LR
-    D[Data] --> L[Life]
-```
-
-### 74. Transformation roadmap
-```mermaid
-graph LR
-    T[Tran] --> R[Road]
-```
-
-### 75. Value realization model
-```mermaid
-graph LR
-    V[Valu] --> R[Real]
-```
-
-### 76. Governance audit trail
-```mermaid
-graph LR
-    G[Govn] --> A[Audi]
-```
-
-### 77. Security RBAC flow
-```mermaid
-graph LR
-    S[Secu] --> R[RBAC]
-```
-
-### 78. Alert noise reduction
-```mermaid
-graph LR
-    A[Aler] --> N[Nois]
-```
-
-### 79. Compliance validation
-```mermaid
-graph LR
-    C[Comp] --> V[Vali]
-```
-
-### 80. Executive dashboard
-```mermaid
-graph LR
-    E[Exec] --> D[Dash]
-```
+## 🏛️ Core Frugality Pillars
+
+1.  **High-Precision Tail Sampling**: Maximizing forensic value by selectively retaining high-interest telemetry spans.
+2.  **Automated Cardinality Governance**: Preventing exponential storage growth through real-time label optimization.
+3.  **Multi-Tier Lifecycle Management**: Minimizing storage unit costs through automated data aging.
+4.  **Signal-to-Noise Intelligence**: Identifying and eliminating "zombie" telemetry that provides zero operational value.
+5.  **Budget-Aware Ingestion Control**: Enforcing hard-fences on telemetry spending at the ingestion point.
+6.  **Full Telemetry Auditability**: Immutable recording of every sampling and retention decision for institutional forensics.
 
 ---
 
 ## 🛠️ Technical Stack & Implementation
 
-### Frugal Core & Orchestration
-- **Processing**: Python 3.11+ / FastAPI / Redis.
-- **Backend**: Prometheus (Metrics), Loki (Logs), OpenTelemetry (Traces).
-- **Optimization**: Automated Cardinality Scanners, Sampling Orchestrators.
+### Frugality Engine & APIs
+*   **Framework**: Python 3.11+ / FastAPI.
+*   **Data Hub**: OpenTelemetry Collector with custom frugality processors.
+*   **Backend**: Prometheus (Metrics), Loki (Logs), Tempo (Traces).
+*   **Persistence**: PostgreSQL (Metadata Lake) and Redis (Live Sampling Cache).
+*   **Auth Orchestrator**: Federated OIDC/SAML for least-privilege telemetry management access.
 
-### Frontend (Observability Hub)
-- **Framework**: React 18 / Vite
-- **Visuals**: Recharts (Spend Trends, Storage Tiers, Saving Realization).
-- **Theme**: Dark, Slate, and Amber (Institutional FinOps Aesthetics).
+### Frugality Dashboard (UI)
+*   **Framework**: React 18 / Vite.
+*   **Theme**: Dark, Amber, Slate (Modern high-fidelity FinOps aesthetic).
+*   **Visualization**: Recharts for spend trends, cardinality heatmaps, and savings realization analytics.
 
-### Infrastructure
-- **Cloud**: AWS EKS (Runtime), RDS (Persistence), S3 (Warm/Cold Storage).
-- **IaC**: Terraform (VPC, EKS, RDS, S3, IAM).
+### Infrastructure & DevOps
+*   **Runtime**: AWS EKS or Azure Kubernetes Service (AKS).
+*   **Storage Plane**: Tiered deployment across EBS (Hot), S3 (Warm), and Glacier (Cold).
+*   **IaC**: Modular Terraform for deploying the frugality hub and sampler distributions.
+
+---
+
+## 🏗️ IaC Mapping (Module Structure)
+
+| Module | Purpose | Real Services |
+| :--- | :--- | :--- |
+| **`infrastructure/frugal_hub`** | Central management plane | EKS, PostgreSQL, Redis |
+| **`infrastructure/samplers`** | Distributed sampling fleet | OTEL Collector, Lambda |
+| **`infrastructure/storage`** | Tiered data lifecycle | S3, EBS, Lifecycle Rules |
+| **`infrastructure/auditing`** | Forensic telemetry sinks | S3, Athena, Quicksight |
 
 ---
 
 ## 🚀 Deployment Guide
 
-### Local Development
+### Local Principal Environment
 ```bash
-# Clone the repository
+# Clone the frugality platform
 git clone https://github.com/devopstrio/monitoring-cost-frugal.git
 cd monitoring-cost-frugal
 
-# Setup environment
+# Configure environment
 cp .env.example .env
 
-# Launch the frugal monitoring mesh
-make up
+# Launch the Frugality stack
+make init
+
+# Trigger a mock telemetry ingestion and sampling simulation
+make simulate-frugality
 ```
-Access the Frugal Hub at `http://localhost:3001`.
+
+Access the Frugal Hub at `http://localhost:3000`.
 
 ---
 
 ## 📜 License
 Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+<div align="center">
+  <p>© 2026 Devopstrio. All rights reserved.</p>
+</div>
